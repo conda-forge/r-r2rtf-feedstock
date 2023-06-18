@@ -1,4 +1,4 @@
-{% set version = '1.0.3' %}
+{% set version = "1.0.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/r2rtf_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/r2rtf/r2rtf_{{ version }}.tar.gz
-  sha256: ea9e34937271ee112a49018b7db940a1c4f74a880fa8d1d661ee218e42f88e1a
+  sha256: 4e969110bde45d86a54971d4ef372125ce83aab364cb33ea22c8aba6cb744ef4
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
